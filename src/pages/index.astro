@@ -10,7 +10,7 @@ import { SEO } from "astro-seo";
 import Particles from "astro-particles"
 import type { ISourceOptions } from "tsparticles-engine";
 import particlesOptions from "../particles.json"
-import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer.astro'
 
 
 /* const options: ISourceOptions = {
@@ -44,16 +44,6 @@ import Footer from '../components/Footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
 	</head>
 	<script>
 		import { type Container, type Engine, tsParticles } from "tsparticles-engine";
@@ -73,11 +63,11 @@ import Footer from '../components/Footer.astro';
 			console.log("particlesLoaded callback");
 		}
 	</script>
-	<body>
-		
-			<Particles id="tsparticles" options={particlesOptions} init="particlesInit" />
-			<main class="h-screen flex items-center justify-center">
-				<div>
+	<body class="relative h-screen">
+		<div>
+			<Particles id="tsparticles" options={particlesOptions} init="particlesInit"/>
+			<main>
+				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 					<div>
 						<h1 class="font-mono text-4xl text-center text-slate-300">schmiegelt.it</h1>
 					</div>
@@ -86,6 +76,9 @@ import Footer from '../components/Footer.astro';
 					</div>  
 				</div>
 			</main>
-			<Footer />
+			<div class="absolute bottom-0 w-full text-center mb-4">
+				<Footer />
+			</div>
+		</div>
 	</body>
 </html>
