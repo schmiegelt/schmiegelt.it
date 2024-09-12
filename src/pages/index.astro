@@ -1,0 +1,91 @@
+---
+// Component Imports
+import Counter from '../components/Counter';
+const someProps = {
+	count: 0,
+};
+
+import { SEO } from "astro-seo";
+
+import Particles from "astro-particles"
+import type { ISourceOptions } from "tsparticles-engine";
+import particlesOptions from "../particles.json"
+import Footer from '../components/Footer.astro';
+
+
+/* const options: ISourceOptions = {
+    background: {
+        color: "#000"
+    },
+    fullScreen: {
+        zIndex: -1
+    },
+    particles: {
+        number: {
+            value: 100
+        },
+        move: {
+            enable: true
+        }
+    }
+}; */
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<SEO
+			title="schmiegelt.it - Home"
+			description="Schmiegelt.IT - Website"
+	  	/> //SEO
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<style>
+			html,
+			body {
+				font-family: system-ui;
+				margin: 0;
+			}
+			body {
+				padding: 2rem;
+			}
+		</style>
+	</head>
+	<script>
+		import { type Container, type Engine, tsParticles } from "tsparticles-engine";
+		import { loadFull } from "tsparticles";
+	
+		// the function name is the parameter passed to the init attribute
+		// required
+		// add the function to window is mandatory, it will be searched there
+		window.particlesInit = async function (engine: Engine) {
+			await loadFull(tsParticles);
+		}
+		
+		// the function name is the parameter passed to the loaded attribute
+		// optional
+		// add the function to window is mandatory, it will be searched there
+		window.particlesLoaded = function (container: Container) {
+			console.log("particlesLoaded callback");
+		}
+	</script>
+	<body>
+		
+			<Particles id="tsparticles" options={particlesOptions} init="particlesInit" />
+			<main class="h-screen flex items-center justify-center">
+				<div>
+					<div>
+						<h1 class="font-mono text-4xl text-center text-slate-300">schmiegelt.it</h1>
+					</div>
+					<div class="animate-pulse">
+						<h2 class="font-mono text-2xl text-center text-slate-300" >Family Website</h2>
+					</div>  
+				</div>
+			</main>
+			<Footer />
+	</body>
+</html>
