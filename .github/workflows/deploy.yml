@@ -11,11 +11,10 @@ on:
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
@@ -26,11 +25,6 @@ jobs:
           # path: . # The root location of your Astro project inside the repository. (optional)
           node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
           package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -38,4 +32,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          local-dir: ./dist/
+      
