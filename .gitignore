@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # Do not commit OLD files
 gatsby_*/
+
+# Do not commit actual CV
+cv.json
