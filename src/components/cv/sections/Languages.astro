@@ -1,0 +1,20 @@
+---
+import Section from "../Section.astro";
+
+import { languages } from "@cv";
+import { certificates } from "@cv";
+
+---
+
+
+<Section className={Astro.props.className} title="Languages">
+    <ul class="flex flex-col">
+        {languages.map(({ language, fluency }) => {
+
+            return(
+            <li>
+                {language}
+            </li>
+        )})}
+    </ul>
+</Section>
