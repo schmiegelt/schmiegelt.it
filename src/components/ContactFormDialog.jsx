@@ -11,7 +11,7 @@ import {
   Input,
   Textarea,
   Link,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { MailIcon } from "./MailIcon.jsx";
 //import {LockIcon} from './LockIcon.jsx';
 
