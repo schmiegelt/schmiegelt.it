@@ -42,8 +42,8 @@ importers:
         specifier: ^11.5.4
         version: 11.5.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       hotkeypad:
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^1.0.2
+        version: 1.0.2
       ninja-keys:
         specifier: ^1.2.2
         version: 1.2.2
@@ -2541,8 +2541,8 @@ packages:
   hastscript@8.0.0:
     resolution: {integrity: sha512-dMOtzCEd3ABUeSIISmrETiKuyydk1w0pa+gE/uormcTpSYuaNJPbX1NU3JLyscSLjwAQM8bWMhhIlnCqnRvDTw==}
 
-  hotkeypad@0.1.1:
-    resolution: {integrity: sha512-v8e9aByI1ReBX30bL/+dHQwsg+UGZaU4WXEWv72DG74h7fSToUm0udXam5tDCns4NsmWLXKzAL3Rjd9FfTjGXw==}
+  hotkeypad@1.0.2:
+    resolution: {integrity: sha512-vvhHZfhNx5LtRoO8+db2Y8Q4QKoaqVbeu2iGMZjV9NAYmHfWTFQNJMWkmqVyhYwoTPLoKDd7GgjaG3rOtTF5pA==}
 
   hotkeys-js@3.8.7:
     resolution: {integrity: sha512-ckAx3EkUr5XjDwjEHDorHxRO2Kb7z6Z2Sxul4MbBkN8Nho7XDslQsgMJT+CiJ5Z4TgRxxvKHEpuLE3imzqy4Lg==}
@@ -2949,8 +2949,8 @@ packages:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
 
-  ohash@1.1.4:
-    resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
+  ohash@1.1.6:
+    resolution: {integrity: sha512-TBu7PtV8YkAZn0tSxobKY2n2aAQva936lhRrj6957aDaCf9IEtqsKbgMzXE/F/sjqYOwmrukeORHNLe5glk7Cg==}
 
   onetime@7.0.0:
     resolution: {integrity: sha512-VXJjc87FScF88uafS3JllDgvAm+c/Slfz06lorj2uAY34rlUu0Nt+v8wreiImcrgAjjIHp1rXpTDlLOGw29WwQ==}
@@ -3627,8 +3627,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ufo@1.5.4:
-    resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
+  ufo@1.6.1:
+    resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
   ultrahtml@1.5.3:
     resolution: {integrity: sha512-GykOvZwgDWZlTQMtp5jrD4BVL+gNn2NVlVafjcFUJ7taY20tqYdwdoWBFy6GBJsNTZe1GkGPkSl5knQAjtgceg==}
@@ -7324,7 +7324,7 @@ snapshots:
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
 
-  hotkeypad@0.1.1: {}
+  hotkeypad@1.0.2: {}
 
   hotkeys-js@3.8.7: {}
 
@@ -7879,7 +7879,7 @@ snapshots:
 
   object-hash@3.0.0: {}
 
-  ohash@1.1.4: {}
+  ohash@1.1.6: {}
 
   onetime@7.0.0:
     dependencies:
@@ -8676,7 +8676,7 @@ snapshots:
 
   typescript@5.6.2: {}
 
-  ufo@1.5.4: {}
+  ufo@1.6.1: {}
 
   ultrahtml@1.5.3: {}
 
@@ -8689,9 +8689,9 @@ snapshots:
   unenv-nightly@2.0.0-20240919-125358-9a64854:
     dependencies:
       defu: 6.1.4
-      ohash: 1.1.4
+      ohash: 1.1.6
       pathe: 1.1.2
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   unified@11.0.5:
     dependencies:
