@@ -9,12 +9,12 @@ function withOpacity(variableName) {
   };
 }
 
-const { nextui } = require("@nextui-org/react");
+const { heroui } = require("@heroui/react");
 
 export default {
   content: [
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -58,5 +58,5 @@ export default {
   variants: {
     extend: {},
   },
-  plugins: [nextui()],
+  plugins: [heroui()],
 };
