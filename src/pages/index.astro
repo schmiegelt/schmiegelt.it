@@ -5,6 +5,7 @@ import Particles from "astro-particles"
 import type { ISourceOptions } from "tsparticles-engine";
 import particlesOptions from "../particles.json"
 import Footer from '../components/Footer.astro'
+import AnimatedHeader from "@/components/AnimatedHeader";
 
 
 /* const options: ISourceOptions = {
@@ -60,13 +61,15 @@ import Footer from '../components/Footer.astro'
 	<body class="relative h-screen">
 		<div>
 			<Particles id="tsparticles" options={particlesOptions} init="particlesInit"/>
+			<AnimatedHeader client:only="react" />
+			 
 			<main>
 				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 					<div>
 						<h1 class="font-mono text-4xl text-center text-slate-300">schmiegelt.it</h1>
 					</div>
 					<div class="animate-pulse">
-						<h2 class="font-mono text-2xl text-center text-slate-300" >Family Website</h2>
+						<h2 class="font-mono text-2xl text-center text-slate-300">Family Website</h2>
 					</div>  
 				</div>
 			</main>
