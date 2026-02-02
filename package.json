@@ -19,7 +19,7 @@
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.4",
     "astro-particles": "^2.10.0",
-    "astro-seo": "^0.8.4",
+    "astro-seo": "^1.1.0",
     "framer-motion": "^12.30.0",
     "hotkeypad": "^1.0.2",
     "ninja-keys": "^1.2.2",
